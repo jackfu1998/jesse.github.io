@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoshi Sato - Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <div class="profile-text">
+                    <h1>Yoshi Sato</h1>
+                    <p class="title">Student Researcher</p>
+                    <p class="institution">Waseda University</p>
+                    <p class="tagline">Advancing Confidential Computing to Build a More Trusted Cloud.</p>
+                    <div class="social-links">
+                        <a href="mailto:yoshisato@kasahara.cs.waseda.ac.jp" title="Email" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/yoshiisato" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yoshi-sato" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <img src="images/fuji_pfp.jpg" alt="Profile Photo" class="profile-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="https://docs.google.com/document/d/1owgEp-hhKZQoQfGhDG5RXD5B2s7SeAJfDv9PFeaNXBQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-intro">
+                    <p>
+                        I'm Yoshi, a student researcher investigating how <span class="highlight">confidential computing</span> and <span class="highlight">hardware-based trust</span> can reshape cloud infrastructures. 
+                    </p>
+                    <p>
+                        Currently a junior majoring in Computer Science & Communications Engineering at <b>Waseda University</b>, where I focus on secure systems research.
+                        My work lies at the intersection of <b>confidential computing</b>, <b>trusted execution environments</b>, and <b>distributed systems</b>.
+                    </p>
+                </div>
+
+                <h3 class="affiliations-title">Research Affiliations</h3>
+                <div class="affiliations-grid">
+                    <div class="affiliation-card waseda-card">
+                        <div class="affiliation-logo waseda-logo"></div>
+                        <div class="affiliation-content">
+                            <h4>Kasahara-Kimura Laboratory</h4>
+                            <p class="affiliation-subtitle">Green Computing Systems Center • Waseda University</p>
+                            <p class="affiliation-desc">Securing cloud workloads while making them more useable and flexible with IO devices.</p>
+                            <div class="affiliation-links">
+                                <a href="https://www.kasahara.cs.waseda.ac.jp/index.html.en" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Lab Website
+                                </a>
+                                <a href="https://www.waseda.jp/inst/gcs/en/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> GCS Center
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="affiliation-card iij-card">
+                        <div class="affiliation-logo iij-logo"></div>
+                        <div class="affiliation-content">
+                            <h4>IIJ Research Laboratory</h4>
+                            <p class="affiliation-subtitle">In collaboration with Imperial College London's LSDS Group</p>
+                            <p class="affiliation-desc">Applying serverless workloads to confidential computing infrastructures for next-generation cloud security.</p>
+                            <div class="affiliation-links">
+                                <a href="https://www.iijlab.net/en/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> IIJ Lab
+                                </a>
+                                <a href="https://lsds.doc.ic.ac.uk/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> LSDS Group
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="news">
+                <h2>News</h2>
+                <ul class="news-list">
+                    <li>
+                        <span class="news-date">August-September 2025</span>
+                        <div class="news-content">
+                            Joining <b>Prof. Fan Zhang's Decentralized Systems Group</b> at Yale University for a summer research internship, researching anonymity networks and TEEs!
+                        </div>
+                    </li>
+                    <li>
+                        <span class="news-date">June 21, 2025</span>
+                        <div class="news-content">
+                            First preprint uploaded for my WiP paper on Confidential GPU Computing:
+                            <a href="files/Towards GPU Passthrough in Intel TDX.pdf" target="_blank" rel="noopener noreferrer">PDF here</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="news-date">June 2025</span>
+                        <div class="news-content">
+                            Volunteering at <a href="https://iscaconf.org/isca2025/" target="_blank" rel="noopener noreferrer"><b>ISCA 2025</b></a>, held this year at Waseda University.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="news-date">June 2025</span>
+                        <div class="news-content">
+                            Hosting a GenAI Workshop at <b>Google Japan (Shibuya)</b> through <a href="https://www.kuma-lab.org/" target="_blank" rel="noopener noreferrer">Kuma Lab</a>, a student-led research community I co-founded.
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            
+            <section id="research">
+                <h2>Research</h2>
+                <div class="research-intro">
+                    <p>
+                        In a world where data is the new currency, trust and privacy are no longer optional—they're foundational. 
+                    </p>
+                    <p class="research-question">
+                        How do we build cloud infrastructures that are not just fast and scalable, but fundamentally trustworthy?
+                    </p>
+                    <p>
+                        At the intersection of hardware, software, and virtualization security lies a uniquely complex trust problem. My research addresses this through confidential computing and its real-world integration.
+                    </p>
+                </div>
+                
+                <h3>Current Research Projects</h3>
+                
+                <!-- Featured Project -->
+                <div class="featured-project">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i>
+                        Featured Project
+                    </div>
+                    <h4>Serverless Confidential Containers (SC2)</h4>
+                    <p>
+                        Researching Kubernetes serverless deployments on confidential computing infrastructure to enable privacy-preserving serverless cloud. 
+                        This project bridges the gap between modern cloud-native architectures and hardware-based security guarantees.
+                    </p>
+                    <p><b>Technologies:</b> K8s, Knative, Confidential Containers (CoCo), Kata Container, Intel TDX, AMD SEV-SNP</p>
+                    <div class="project-resources">
+                        <a href="https://www.iijlab.net/activities/seminars.html" class="resource-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-video"></i>
+                            Watch Presentation
+                        </a>
+                        <a href="files/iijlab-seminar-sc2-presentation.pdf" class="resource-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-pdf"></i>
+                            View Slides
+                        </a>
+
+                    </div>
+                </div>
+                
+                <!-- Other Projects -->
+                <div class="research-projects">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4 class="project-title">GPU Throughput Evaluations for CVMs</h4>
+                            <span class="project-status">
+                                <span class="status-dot"></span>
+                                Active
+                            </span>
+                        </div>
+                        <p class="project-description">
+                            Measuring GPU throughput overheads across different CVMs to understand I/O performance over different vendor hardware. 
+                            This research aims to quantify the performance trade-offs when running GPU-accelerated workloads in confidential environments.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Intel TDX</span>
+                            <span class="tech-badge">NVIDIA GPU</span>
+                            <span class="tech-badge">CUDA</span>
+                        </div>
+                        <i class="fas fa-arrow-right expand-icon"></i>
+                    </div>
+                </div>
+                
+                <h3>Research Interests</h3>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <strong>Confidential Computing</strong>
+                        <p style="font-size: 0.9rem; color: var(--secondary-text); margin: 0.5rem 0 0;">Foundation of Trustworthy Cloud Computing</p>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-network-wired"></i>
+                        <strong>Secure Distributed Systems</strong>
+                        <p style="font-size: 0.9rem; color: var(--secondary-text); margin: 0.5rem 0 0;">TEE-based anonymity networks & serverless</p>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-lock"></i>
+                        <strong>Privacy-Preserving MPC</strong>
+                        <p style="font-size: 0.9rem; color: var(--secondary-text); margin: 0.5rem 0 0;">Bioinformatics & federated learning</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Feel free to reach out if you have questions about my research, are interested 
+                    in collaboration, or want to connect.
+                </p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:yoshisato@kasahara.cs.waseda.ac.jp">yoshisato@kasahara.cs.waseda.ac.jp</a></p>
+                    <p><i class="fas fa-building"></i> Green Computing Systems Research Center (Bldg. No. 40)</p>
+                    <p><i class="fas fa-map-marker-alt"></i> School of Fundamental Science and Engineering, Waseda University, Shinjuku, Tokyo, Japan</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2025 Yoshiaki Sato. All rights reserved.</p>
+            <p>Last updated: 2025-06-21</p>
+        </footer>
+    </div>
+
+    <script>
+        // Dark mode toggle functionality
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            const currentTheme = body.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.className = 'fas fa-moon';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.className = 'fas fa-sun';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+        
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (savedTheme === 'dark') {
+                document.body.setAttribute('data-theme', 'dark');
+                themeIcon.className = 'fas fa-sun';
+            } else {
+                document.body.setAttribute('data-theme', 'light');
+                themeIcon.className = 'fas fa-moon';
+            }
+            
+            // Navigation scroll highlighting
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('nav ul li a');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 60) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href').substring(1) === current) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
